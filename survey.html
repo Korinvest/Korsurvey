@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문조사</title>
+</head>
+<body>
+    <h2>설문조사</h2>
+    <form action="/submit" method="POST">
+        <label>성별:
+            <input type="radio" name="gender" value="male"> 남성
+            <input type="radio" name="gender" value="female"> 여성
+        </label><br>
+        <label>연령대:
+            <select name="age">
+                <option value="10s">10대</option>
+                <option value="20s">20대</option>
+                <option value="30s">30대</option>
+                <option value="40s">40대</option>
+                <option value="50s+">50대 이상</option>
+            </select>
+        </label><br>
+        <label>직업군:
+            <input type="text" name="occupation">
+        </label><br>
+        <label>선호하는 투자종목:
+            <input type="checkbox" name="investment_preference" value="국내주식"> 국내주식
+            <input type="checkbox" name="investment_preference" value="해외주식"> 해외주식
+            <input type="checkbox" name="investment_preference" value="펀드"> 펀드
+            <input type="checkbox" name="investment_preference" value="부동산"> 부동산
+            <input type="checkbox" name="investment_preference" value="가상화폐"> 가상화폐
+        </label><br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>
